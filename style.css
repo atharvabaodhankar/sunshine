@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&family=Kumbh+Sans:wght@100;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Macondo+Swash+Caps&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&family=Satisfy&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Archivo Black', sans-serif; */
+    /* font-family: 'Righteous', cursive; */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+}
+
+/* NavBar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    background: rgba(255, 255, 255, 0.64);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    filter: saturate(2);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    top: 0rem;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.nav-btn {
+    padding: 1rem 1.5rem;
+    border: 2px solid #8097ae;
+    font-size: 1.7rem;
+    margin: 0 .8rem;
+    color: #ff3911;
+    font-weight: 500;
+    position: relative;
+    transition: all .4s ease;
+}
+
+.nav-btn:hover {
+    color: #fff;
+}
+
+.nav-btn::after {
+    width: 0;
+    height: 100%;
+    background-color: #85D2EC;
+    content: '';
+    position: absolute;
+    transition: all .3s ease;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    padding: 1rem 1.5rem;
+    color: #192027;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+#hero-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Hero */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+}
+
+#hero::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background: rgb(133, 210, 236);
+    background: linear-gradient(0deg, rgba(133, 210, 236, 1) 1%, rgba(133, 210, 236, 0) 100%);
+}
+.hero{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Archivo Black', sans-serif;
+}
+.hero h2{
+    font-size: 4rem;
+}
+.hero h1{
+    font-size: 12rem;  
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 1rem;
+}   
+.hero h3{
+    font-size: 3.5rem;
+}
