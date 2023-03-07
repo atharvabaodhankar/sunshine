@@ -21,11 +21,20 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <div class="nav-btns-2">
+                        <a href="#" class="nav-btn">Join Us</a>
+                        <a href="#" class="nav-btn">Log In</a>
+                    </div>
                 </ul>
             </div>
             <div class="nav-btns">
                 <a href="#" class="nav-btn">Join Us</a>
                 <a href="#" class="nav-btn">Log In</a>
+            </div>
+            <div class="hamburger">
+                <div class="hambar"></div>
+                <div class="hambar"></div>
+                <div class="hambar"></div>
             </div>
         </nav>
         <section id="hero">
@@ -36,7 +45,64 @@
            </div>
         </section>
     </div>
+    <section id="features">
+        <div class="features-header">
+            <img src="/sun.png" alt="">
+            <h1>Our Features</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dignissimos necessitatibus, et aperiam animi odit soluta nesciunt nisi libero minima.</p>
+        </div>
+        <div class="features">
+            <div class="features-box">
+                <div class="features-icon">
+                    
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <div class="features-desc">
+                    <h3>Online Booking</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt quis harum quo necessitatibus hic animi delectus veniam. </p>
+                </div>
+            </div>
+            <div class="features-box">
+                <div class="features-icon">
+                    
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <div class="features-desc">
+                    <h3>Affordable Cost</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt quis harum quo necessitatibus hic animi delectus veniam. </p>
+                </div>
+            </div>
+            <div class="features-box">
+                <div class="features-icon">
+                    
+                    <i class="fa-solid fa-utensils"></i>
+                </div>
+                <div class="features-desc">
+                    <h3>Food Availability</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt quis harum quo necessitatibus hic animi delectus veniam. </p>
+                </div>
+            </div>
+            <div class="features-box">
+                <div class="features-icon">
+                    
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+                <div class="features-desc">
+                    <h3>Housekeeping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sunt quis harum quo necessitatibus hic animi delectus veniam. </p>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
+    <script>
+        var nav = document.querySelector("nav");
+        var hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener("click" , ()=>{
+            nav.classList.toggle("active");
+        })
+    </script>
 </body>
 </html>
