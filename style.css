@@ -132,7 +132,7 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(/hero.jpg);
+    background-image: url(hero.jpg);
     background-position: center;
     background-size: cover;
     z-index: 2;
