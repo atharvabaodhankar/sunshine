@@ -13,6 +13,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -254,6 +255,86 @@ nav ul li a {
     font-size: 1.9rem;
     color: #ff3911;
 }
+/* Services */
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+.service-box-outer{
+    background-image: url(food.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .4s ease;
+    margin: 2rem 2rem;
+}
+.service-box-outer:nth-child(2) {
+    background-image: url(food2.jpg);
+}
+.service-box-outer:nth-child(3){
+    background-image: url(food3.jpg);
+}
+.service-box-outer:nth-child(2) .service-box-img{
+    background-image: url(food2.jpg);
+
+}
+.service-box-outer:nth-child(3) .service-box-img{
+    background-image: url(food3.jpg);
+
+
+}
+.service-box-img{
+    background-image: url(food.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .4s ease
+}
+.service-box-desc{
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ff600a51;
+    transition: all .4s ease;
+    bottom: -100%;
+    color: #fff;
+}
+.service-box-desc h3{
+    font-size: 2rem;
+}
+.service-box:hover .service-box-desc{
+    bottom: -50%;
+}
+.service-box:hover .service-box-img{
+    height: 50%;
+}
+
 @media screen and (max-width:1250px) {
     .features-desc {
         width: auto;
@@ -270,7 +351,9 @@ nav ul li a {
     }
 }
 @media screen and (max-width:1100px) {
-
+    .service-box {
+        width: 270px;
+    }
 }
 @media screen and (max-width:1000px) {
     .hamburger{
@@ -301,11 +384,12 @@ nav ul li a {
         position: fixed;
         top: 8rem;
         flex-direction: column;
-        background-color: #ffb9ab;
+        background-color: #f7f2feeb;
         width: 100%;
         left: -100%;
         padding: 5rem 0;
         transition: all .4s ease;
+        filter: saturate(1.2);
     }
     nav ul li {
         margin: 1rem 0;
@@ -316,6 +400,15 @@ nav ul li a {
     .features-box {
         width: 45%;
     }
+    .services{
+        flex-wrap: wrap;
+    }
+    .service-box-outer {
+        width: 100%;
+    }
+    .service-box{
+        width: 320px;
+    }
 }
 @media screen and (max-width:900px) {
     h1{
@@ -325,9 +418,12 @@ nav ul li a {
         font-size: 9rem;
     }
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:840px) {
     .hero h1 {
         letter-spacing: .3rem;
+    }
+    .service-box-outer{
+        width: auto;
     }
 }
 @media screen and (max-width:700px) {
@@ -345,6 +441,9 @@ nav ul li a {
     }
     h1 {
         font-size: 3.4rem;
+    }
+    .service-box {
+        width: 300px;
     }
 }
 @media screen and (max-width:600px) {
@@ -368,5 +467,7 @@ nav ul li a {
     }
 }
 @media screen and (max-width:350px) {
-    
+    .service-box {
+        width: 260px;
+    }
 }
