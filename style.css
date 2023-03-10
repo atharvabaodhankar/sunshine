@@ -134,6 +134,7 @@ nav ul li a {
     justify-content: center;
     height: 100vh;
     background-image: url(hero.jpg);
+    background-image: url(/cory-bjork-D1yT791Nf9A-unsplash.jpg);
     background-position: center;
     background-size: cover;
     z-index: 2;
@@ -158,14 +159,17 @@ nav ul li a {
 }
 .hero h2{
     font-size: 4rem;
+    color: #34404d;
 }
 .hero h1{
     font-size: 12rem;  
     font-family: 'Archivo Black', sans-serif;
     letter-spacing: 1rem;
+    color: #2b3742;
 }   
 .hero h3{
     font-size: 3.5rem;
+    color: #203a53;
 }
 .nav-btns-2{
     display: none;
@@ -412,6 +416,149 @@ nav ul li a {
 .testi-desc p{
     color: #304458;
 }
+/* Contact */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background-image:linear-gradient(180deg, rgba(255, 255, 255, 0.253) 6%, rgba(131, 177, 222, 0.575) 62%) , url(contact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 500px;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #304458ef;
+    padding: 0 3rem;
+    height: 100%;
+    width: 600px;
+}
+.contact-info-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.contact-info-header h2{
+    color: #ffffff;
+    font-size: 3rem;
+}
+.contact-info-header p{
+    color: rgb(228, 228, 228);
+}
+.contact-info-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-info-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 1rem 0;
+}
+.contact-info-box i{
+    font-size: 2rem;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+.contact-info-box-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 1.5rem;
+}
+.contact-info-box-desc p{
+    color: #fff;
+    margin:  0;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.081);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.55);
+    border-top: 1px solid rgba(255, 255, 255, 0.55);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 0 2rem 2rem 0;
+}
+.main-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+.main-form input{
+    height: 45px;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+.main-form input:focus{
+    border: none;
+    outline: 2px solid #304458;
+}
+.main-form textarea:focus{
+    border: none;
+    outline: 2px solid #304458;
+}
+.main-form .name{
+    width: 100%;
+    margin: 4rem 0;
+}
+.main-form .email{
+    width: 45%;
+}
+.main-form .number{
+    width: 45%;
+}
+.main-form .textarea{
+    width: 100%;
+    border-radius: 1rem;
+    margin: 4rem 0;
+    height: 100px;
+    border: none;
+    padding: 1rem 1rem;
+}
+.main-form a{
+    width: 100%;
+    border-radius: 3rem;
+    background-color: #304458;
+    color: #fff;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
 @media screen and (max-width:1300px) {
     .testi-box {
         width: 334px;
@@ -430,6 +577,12 @@ nav ul li a {
     }
     .features-header {
         padding: 0 2rem;
+    }
+    .contact-form {
+        width: 40vw;
+    }
+    .contact-info{
+        width: 40vw;
     }
 }
 @media screen and (max-width:1100px) {
@@ -494,6 +647,12 @@ nav ul li a {
     .service-box{
         width: 320px;
     }
+    .contact-form {
+        width: 45vw;
+    }
+    .contact-info{
+        width: 45vw;
+    }
 }
 @media screen and (max-width:900px) {
     h1{
@@ -513,6 +672,25 @@ nav ul li a {
     .testi-box {
         width: 80%;
     }
+    .contact{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+    .contact-info{
+        width: 100%;
+        padding: 5rem 3rem;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 3rem 0;
+        border-radius: 0 0 2rem 2rem;
+        border-top:none ;
+        border-right: 1px solid rgba(255, 255, 255, 0.55);
+        border-left: 1px solid rgba(255, 255, 255, 0.55);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+    }
+    
 }
 @media screen and (max-width:700px) {
     .hero h1 {
@@ -547,6 +725,15 @@ nav ul li a {
     .testi-desc i {
         font-size: 2.5rem;
     }
+    .contact{
+        width: 90%;
+    }
+    .contact-info-header h2 {
+        font-size: 2.5rem;
+    }
+    .contact-info {
+        padding: 5rem 2rem;
+    }
 }
 @media screen and (max-width:450px) {
     .hero h1 {
@@ -554,6 +741,12 @@ nav ul li a {
     }
     .hero h2 {
         font-size: 2rem;
+    }
+    .main-form .textarea {
+        margin: 2rem 0;
+    }
+    .main-form .name{
+        margin: 2rem 0;
     }
 }
 @media screen and (max-width:400px) {
