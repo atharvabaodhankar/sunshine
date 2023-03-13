@@ -338,6 +338,70 @@ nav ul li a {
 .service-box:hover .service-box-img{
     height: 50%;
 }
+/* Serve */
+#serve{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    padding: 5rem 0;
+}
+.serve{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.serve-box{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+    transform-style: preserve-3d;
+    margin: 2rem 1.5rem;
+}
+.serve-box-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background-color: #6284a5;
+    border-radius: 1rem;
+}
+.serve-box-outer:hover .serve-box{
+    transform: rotateY(180deg);
+}
+.serve-box-front h3{
+    font-size: 2rem;
+    color: #fff;
+}
+.serve-box-front p{
+    color: #fff;
+}
+.serve-box-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all .4s ease;
+    transform: rotateY(180deg);
+    border-radius: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.serve-box-back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* testimonials */
 #testi{
     display: flex;
@@ -653,6 +717,9 @@ nav ul li a {
     .contact-info{
         width: 45vw;
     }
+    .serve-box {
+        width: 270px;
+    }
 }
 @media screen and (max-width:900px) {
     h1{
@@ -713,7 +780,9 @@ nav ul li a {
     }
 }
 @media screen and (max-width:600px) {
-    
+    .serve-box {
+        width: 300px;
+    }
 }
 @media screen and (max-width:500px) {
     .testi-box {
@@ -758,5 +827,8 @@ nav ul li a {
 @media screen and (max-width:350px) {
     .service-box {
         width: 260px;
+    }
+    .serve-box {
+        width:270px;
     }
 }
